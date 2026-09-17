@@ -7,13 +7,15 @@ import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
-    <div style={{height:'220px'}} className='text-light bg-primary d-flex justify-content-center align-items-center flex-column'>
-      <div className='d-flex justify-content-evenly mb-2 w-100 p-4'>
-        <div style={{width:'480px'}}>
+    <div style={{ minHeight: '220px' }} className='text-light bg-primary d-flex justify-content-center align-items-center flex-column py-4'>
+      <div className='d-flex flex-column flex-md-row justify-content-evenly mb-2 w-100 p-3 p-md-4 gap-3'>
+        <div className='w-100'>
           <h3><FontAwesomeIcon icon={faTruckFast} /> ECART</h3>
-          <p>Designed and built with all the love in the world by me. <br/>
-          Code licenced Gadha, docs CC BY 3.0. <br/>
-          Currently v5.3.2</p>
+          <p>
+            Designed and built with all the love in the world by me. <br/>
+            Code licenced Gadha, docs CC BY 3.0. <br/>
+            Currently v5.3.2
+          </p>
         </div>
         <div className='d-flex flex-column'>
           <h3>Links</h3>
@@ -29,11 +31,11 @@ function Footer() {
         </div>
         <div className='d-flex flex-column'>
           <h3>Contact US</h3>
-          <div className='d-flex md-2'>
+          <div className='d-flex mb-2'>
             <input type="text" placeholder='Email Here!!!' className='form-control'/>
             <button className='btn text-light'><FontAwesomeIcon icon={faRightLong} /></button>
           </div>
-          <div className='d-flex jsutify-content-between align-items-center mt-3'>
+          <div className='d-flex justify-content-center align-items-center mt-3'>
             <FontAwesomeIcon icon={faFacebook} />
             <FontAwesomeIcon icon={faTwitter} className='p-2' />
             <FontAwesomeIcon icon={faWhatsapp} />
